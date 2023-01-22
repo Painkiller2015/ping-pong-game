@@ -88,8 +88,7 @@ public class JenkinsBuild {
     private static string[] FindEnabledEditorScenes(){
   
         List<string> EditorScenes = new List<string>();
-        foreach (EditorBuildSettingsScene scene in EditorBuildSettings.scenes)
-            if (scene.enabled)
+        foreach (EditorBuildSettingsScene scene in EditorBuildSettings.scenes)            
                 EditorScenes.Add(scene.path);
  
         return EditorScenes.ToArray();
